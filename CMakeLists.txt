@@ -150,7 +150,7 @@ ENDIF(CMAKE_C_COMPILER_ID MATCHES "^XL$")
 IF (MSVC)
   if (ENABLE_WERROR)
     # /WX option is the same as gcc's -Werror option.
-    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /WX")
+    #SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /WX")
   endif ()
   #################################################################
   # Set compile flags for debug build.
