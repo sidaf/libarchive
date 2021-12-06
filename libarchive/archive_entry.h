@@ -108,7 +108,7 @@ typedef ssize_t la_ssize_t;
  * .lib.  The default here assumes you're building a DLL.  Only
  * libarchive source should ever define __LIBARCHIVE_BUILD.
  */
-#if ((defined __WIN32__) || (defined _WIN32) || defined(__CYGWIN__)) && (!defined LIBARCHIVE_STATIC)
+#if ((defined __WIN32__) || (defined _WIN32) || defined(__CYGWIN__)) && 0
 # ifdef __LIBARCHIVE_BUILD
 #  ifdef __GNUC__
 #   define __LA_DECL	__attribute__((dllexport)) extern
